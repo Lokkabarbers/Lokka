@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
   <title>Løkka Barbers - Barber Website</title>
@@ -47,8 +47,12 @@
       width: 180px;
     }
     
-    .haircut-option.selected {
+    .haircut-option:hover {
       background-color: #45a049;
+    }
+    
+    .haircut-option.selected {
+      background-color: #2196f3;
     }
     
     .barber-menu {
@@ -106,7 +110,8 @@
       color: #333;
     }
     
-    .form-field input[type="text"], .form-field input[type="date"] {
+    .form-field input[type="text"],
+    .form-field input[type="date"] {
       width: 100%;
       padding: 12px;
       font-size: 16px;
@@ -116,7 +121,8 @@
       color: #333;
     }
     
-    .form-field input[type="text"]:focus, .form-field input[type="date"]:focus {
+    .form-field input[type="text"]:focus,
+    .form-field input[type="date"]:focus {
       outline: none;
       border-color: #2196f3;
     }
@@ -165,7 +171,8 @@
       color: #444;
     }
     
-    .form-field input[type="text"], .form-field input[type="date"] {
+    .form-field input[type="text"],
+    .form-field input[type="date"] {
       width: 100%;
       padding: 12px;
       font-size: 16px;
@@ -175,7 +182,8 @@
       color: #444;
     }
     
-    .form-field input[type="text"]:focus, .form-field input[type="date"]:focus {
+    .form-field input[type="text"]:focus,
+    .form-field input[type="date"]:focus {
       outline: none;
       border-color: #2196f3;
     }
@@ -192,21 +200,27 @@
     }
   </style>
   <script>
+    let selectedHaircut = "";
+    
     function showBarberOptions(haircut) {
       var haircutDetails = document.getElementById("haircut-details");
       var barberOptions = document.getElementById("barber-options");
       
+      selectedHaircut = haircut;
       haircutDetails.innerHTML = "Selected Haircut: " + haircut + "<br>Cost: 80 kr";
-      barberOptions.classList.add("fade-in");
-      barberOptions.style.display = "flex";
       
-      var haircutButtons = document.getElementsByClassName("haircut-option");
-      for (var i = 0; i < haircutButtons.length; i++) {
-        haircutButtons[i].classList.remove("selected");
+      // Remove selected class from all haircut options
+      var haircutOptions = document.getElementsByClassName("haircut-option");
+      for (var i = 0; i < haircutOptions.length; i++) {
+        haircutOptions[i].classList.remove("selected");
       }
       
-      var selectedHaircutButton = document.getElementById("haircut-" + haircut.toLowerCase().replace(/\s/g, ""));
-      selectedHaircutButton.classList.add("selected");
+      // Add selected class to the chosen haircut option
+      var chosenHaircutOption = document.getElementById(haircut.replace(/\s+/g, "-").toLowerCase());
+      chosenHaircutOption.classList.add("selected");
+      
+      barberOptions.classList.add("fade-in");
+      barberOptions.style.display = "flex";
     }
     
     function selectBarber(barber) {
@@ -223,7 +237,10 @@
       var checkoutForm = document.getElementById("checkout-form");
       var purchaseSuccess = document.getElementById("purchase-success");
       
-      checkoutForm.action = "https://formsubmit.co/hafejulian4@gmail.com";
+      // Update the form action URL to include the selected haircut
+      checkoutForm.action =
+        "https://formsubmit.co/hafejulian4@gmail.com?haircut=" + encodeURIComponent(selectedHaircut);
+      
       checkoutForm.method = "POST";
       checkoutForm.submit();
       
@@ -237,20 +254,20 @@
   <div class="container">
     <h1>Løkka Barbers</h1>
     <div class="haircut-menu">
-      <button id="haircut-boosiefade" class="haircut-option" onclick="showBarberOptions('Boosie Fade')">Boosie Fade</button>
-      <button id="haircut-r9" class="haircut-option" onclick="showBarberOptions('R9')">R9</button>
-      <button id="haircut-skinfade" class="haircut-option" onclick="showBarberOptions('Skin Fade')">Skin Fade</button>
-      <button id="haircut-løkkaspesial" class="haircut-option" onclick="showBarberOptions('Løkka spesial')">Løkka spesial</button>
-      <button id="haircut-fade1" class="haircut-option" onclick="showBarberOptions('Fade 1')">Fade 1</button>
-      <button id="haircut-fadelolsex" class="haircut-option" onclick="showBarberOptions('Fadelolsex')">Fadelolsex</button>
-      <button id="haircut-faderoblox" class="haircut-option" onclick="showBarberOptions('Fade ROBLOX!')">Fade ROBLOX!</button>
-      <button id="haircut-cut1" class="haircut-option" onclick="showBarberOptions('Cut 1')">Cut 1</button>
-      <button id="haircut-nigboss999" class="haircut-option" onclick="showBarberOptions('Nigboss999')">Nigboss999</button>
-      <button id="haircut-cutear" class="haircut-option" onclick="showBarberOptions('Cut ear')">Cut ear</button>
-      <button id="haircut-earwax1" class="haircut-option" onclick="showBarberOptions('Earwax 1')">Earwax 1</button>
-      <button id="haircut-ripoffear1" class="haircut-option" onclick="showBarberOptions('Rip off ear 1')">Rip off ear 1</button>
-      <button id="haircut-bordtennis" class="haircut-option" onclick="showBarberOptions('Bordtennis')">Bordtennis</button>
-      <button id="haircut-aljosa" class="haircut-option" onclick="showBarberOptions('Aljosa')">Aljosa</button>
+      <button class="haircut-option" id="boosie-fade" onclick="showBarberOptions('Boosie Fade')">Boosie Fade</button>
+      <button class="haircut-option" id="r9" onclick="showBarberOptions('R9')">R9</button>
+      <button class="haircut-option" id="skin-fade" onclick="showBarberOptions('Skin Fade')">Skin Fade</button>
+      <button class="haircut-option" id="lokka-spesial" onclick="showBarberOptions('Løkka spesial')">Løkka spesial</button>
+      <button class="haircut-option" id="fade-1" onclick="showBarberOptions('Fade 1')">Fade 1</button>
+      <button class="haircut-option" id="fadelolsex" onclick="showBarberOptions('Fadelolsex')">Fadelolsex</button>
+      <button class="haircut-option" id="fade-roblox" onclick="showBarberOptions('Fade ROBLOX!')">Fade ROBLOX!</button>
+      <button class="haircut-option" id="cut-1" onclick="showBarberOptions('Cut 1')">Cut 1</button>
+      <button class="haircut-option" id="nigboss999" onclick="showBarberOptions('Nigboss999')">Nigboss999</button>
+      <button class="haircut-option" id="cut-ear" onclick="showBarberOptions('Cut ear')">Cut ear</button>
+      <button class="haircut-option" id="earwax-1" onclick="showBarberOptions('Earwax 1')">Earwax 1</button>
+      <button class="haircut-option" id="rip-off-ear-1" onclick="showBarberOptions('Rip off ear 1')">Rip off ear 1</button>
+      <button class="haircut-option" id="bordtennis" onclick="showBarberOptions('Bordtennis')">Bordtennis</button>
+      <button class="haircut-option" id="aljosa" onclick="showBarberOptions('Aljosa')">Aljosa</button>
     </div>
     
     <div id="barber-options" class="fade-in" style="display: none;">
