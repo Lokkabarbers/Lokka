@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
   <title>Løkka Barbers - Barber Website</title>
@@ -280,9 +280,9 @@
     </div>
     
     <div id="haircut-details" class="checkout-section"></div>
-    
     <div id="checkout-section" class="checkout-section" style="display: none;">
       <h2 class="checkout-title">Checkout</h2>
+      <form id="checkout-form" class="checkout-form" onsubmit="event.preventDefault(); submitCheckoutForm();">
       <div class="form-field">
         <span id="selected-haircut" style="font-weight: bold;"></span>
       </div>
@@ -294,7 +294,6 @@
         <label for="cost">Cost:</label>
         <input type="text" id="cost" name="cost" value="80 kr" readonly>
       </div>
-      <form id="checkout-form" class="checkout-form" onsubmit="event.preventDefault(); submitCheckoutForm();">
         <div class="form-field">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required>
