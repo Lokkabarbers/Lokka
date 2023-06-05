@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!SEC html>
 <html>
 <head>
   <title>Løkka Barbers - Barber Website</title>
@@ -52,7 +52,7 @@
     }
     
     .haircut-option.selected {
-      background-color: #2196f3;
+      background-color: #1976d2;
     }
     
     .barber-menu {
@@ -200,25 +200,20 @@
     }
   </style>
   <script>
-    let selectedHaircut = "";
+    var selectedHaircut = null;
     
     function showBarberOptions(haircut) {
       var haircutDetails = document.getElementById("haircut-details");
       var barberOptions = document.getElementById("barber-options");
       
-      selectedHaircut = haircut;
-      haircutDetails.innerHTML = "Selected Haircut: " + haircut + "<br>Cost: 80 kr";
-      
-      // Remove selected class from all haircut options
-      var haircutOptions = document.getElementsByClassName("haircut-option");
-      for (var i = 0; i < haircutOptions.length; i++) {
-        haircutOptions[i].classList.remove("selected");
+      if (selectedHaircut) {
+        selectedHaircut.classList.remove("selected");
       }
       
-      // Add selected class to the chosen haircut option
-      var chosenHaircutOption = document.getElementById(haircut.replace(/\s+/g, "-").toLowerCase());
-      chosenHaircutOption.classList.add("selected");
+      selectedHaircut = document.getElementById(haircut.replace(/\s+/g, '-').toLowerCase());
+      selectedHaircut.classList.add("selected");
       
+      haircutDetails.innerHTML = "Selected Haircut: " + haircut + "<br>Cost: 80 kr";
       barberOptions.classList.add("fade-in");
       barberOptions.style.display = "flex";
     }
@@ -237,10 +232,7 @@
       var checkoutForm = document.getElementById("checkout-form");
       var purchaseSuccess = document.getElementById("purchase-success");
       
-      // Update the form action URL to include the selected haircut
-      checkoutForm.action =
-        "https://formsubmit.co/hafejulian4@gmail.com?haircut=" + encodeURIComponent(selectedHaircut);
-      
+      checkoutForm.action = "https://formsubmit.co/hafejulian4@gmail.com";
       checkoutForm.method = "POST";
       checkoutForm.submit();
       
@@ -254,20 +246,20 @@
   <div class="container">
     <h1>Løkka Barbers</h1>
     <div class="haircut-menu">
-      <button class="haircut-option" id="boosie-fade" onclick="showBarberOptions('Boosie Fade')">Boosie Fade</button>
-      <button class="haircut-option" id="r9" onclick="showBarberOptions('R9')">R9</button>
-      <button class="haircut-option" id="skin-fade" onclick="showBarberOptions('Skin Fade')">Skin Fade</button>
-      <button class="haircut-option" id="lokka-spesial" onclick="showBarberOptions('Løkka spesial')">Løkka spesial</button>
-      <button class="haircut-option" id="fade-1" onclick="showBarberOptions('Fade 1')">Fade 1</button>
-      <button class="haircut-option" id="fadelolsex" onclick="showBarberOptions('Fadelolsex')">Fadelolsex</button>
-      <button class="haircut-option" id="fade-roblox" onclick="showBarberOptions('Fade ROBLOX!')">Fade ROBLOX!</button>
-      <button class="haircut-option" id="cut-1" onclick="showBarberOptions('Cut 1')">Cut 1</button>
-      <button class="haircut-option" id="nigboss999" onclick="showBarberOptions('Nigboss999')">Nigboss999</button>
-      <button class="haircut-option" id="cut-ear" onclick="showBarberOptions('Cut ear')">Cut ear</button>
-      <button class="haircut-option" id="earwax-1" onclick="showBarberOptions('Earwax 1')">Earwax 1</button>
-      <button class="haircut-option" id="rip-off-ear-1" onclick="showBarberOptions('Rip off ear 1')">Rip off ear 1</button>
-      <button class="haircut-option" id="bordtennis" onclick="showBarberOptions('Bordtennis')">Bordtennis</button>
-      <button class="haircut-option" id="aljosa" onclick="showBarberOptions('Aljosa')">Aljosa</button>
+      <button id="boosie-fade" class="haircut-option" onclick="showBarberOptions('Boosie Fade')">Boosie Fade</button>
+      <button id="r9" class="haircut-option" onclick="showBarberOptions('R9')">R9</button>
+      <button id="skin-fade" class="haircut-option" onclick="showBarberOptions('Skin Fade')">Skin Fade</button>
+      <button id="løkka-spesial" class="haircut-option" onclick="showBarberOptions('Løkka spesial')">Løkka spesial</button>
+      <button id="fade-1" class="haircut-option" onclick="showBarberOptions('Fade 1')">Fade 1</button>
+      <button id="fadelolsex" class="haircut-option" onclick="showBarberOptions('Fadelolsex')">Fadelolsex</button>
+      <button id="fade-roblox" class="haircut-option" onclick="showBarberOptions('Fade ROBLOX!')">Fade ROBLOX!</button>
+      <button id="cut-1" class="haircut-option" onclick="showBarberOptions('Cut 1')">Cut 1</button>
+      <button id="nigboss999" class="haircut-option" onclick="showBarberOptions('Nigboss999')">Nigboss999</button>
+      <button id="cut-ear" class="haircut-option" onclick="showBarberOptions('Cut ear')">Cut ear</button>
+      <button id="earwax-1" class="haircut-option" onclick="showBarberOptions('Earwax 1')">Earwax 1</button>
+      <button id="rip-off-ear-1" class="haircut-option" onclick="showBarberOptions('Rip off ear 1')">Rip off ear 1</button>
+      <button id="bordtennis" class="haircut-option" onclick="showBarberOptions('Bordtennis')">Bordtennis</button>
+      <button id="aljosa" class="haircut-option" onclick="showBarberOptions('Aljosa')">Aljosa</button>
     </div>
     
     <div id="barber-options" class="fade-in" style="display: none;">
@@ -280,11 +272,11 @@
     </div>
     
     <div id="haircut-details" class="checkout-section"></div>
+    
     <div id="checkout-section" class="checkout-section" style="display: none;">
       <h2 class="checkout-title">Checkout</h2>
-      <form id="checkout-form" class="checkout-form" onsubmit="event.preventDefault(); submitCheckoutForm();">
       <div class="form-field">
-        <span id="selected-haircut" style="font-weight: bold;"></span>
+        <span id="selected-barber" style="font-weight: bold;"></span>
       </div>
       <div class="form-field">
         <label for="date">Dato:</label>
@@ -294,6 +286,7 @@
         <label for="cost">Cost:</label>
         <input type="text" id="cost" name="cost" value="80 kr" readonly>
       </div>
+      <form id="checkout-form" class="checkout-form" onsubmit="event.preventDefault(); submitCheckoutForm();">
         <div class="form-field">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required>
