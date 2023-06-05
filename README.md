@@ -377,7 +377,7 @@ function selectBarber(barber) {
       <button id="løkka-spesial" class="haircut-option" onclick="showBarberOptions('Løkka spesial')">Løkka spesial</button>
       <button id="fade" class="haircut-option" onclick="showBarberOptions('Fade')">Fade</button>
       <button id="fadelolsex" class="haircut-option" onclick="showBarberOptions('Fadelolsex')">Fadelolsex</button>
-      <button id="omskjering" class="haircut-option" onclick="showBarberOptions('Omskjæring')">Omskjæring</button>
+      <button id="omskjæring" class="haircut-option" onclick="showBarberOptions('Omskjæring')">Omskjæring</button>
       <button id="flintskallet" class="haircut-option" onclick="showBarberOptions('flintskallet')">flintskallet</button>
       <button id="spotifypremium5" class="haircut-option" onclick="showBarberOptions('spotifypremium5')">spotifypremium5</button>
       <button id="gabrielgarcialol" class="haircut-option" onclick="showBarberOptions('GabrielGarcialol')">GabrielGarcialol</button>
