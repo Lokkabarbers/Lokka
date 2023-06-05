@@ -327,8 +327,8 @@ function selectBarber(barber) {
     </div>
     
     <div class="footer">
-      <span style="font-size: 20px;">Lagd av Julian Philip Hafell</span>
-      <span style="font-size: 20px;">Sponsors: Gucci, Louis Vuitton, Prada, Hugo Boss, Ralph Lauren Polo, Monster, Løkka Boss, Anders</span>
+      <span style="font-size: 20px;">Laget av Julian Philip Hafell</span>
+      <span style="font-size: 20px;">Sponsors: Gucci, Louis Vuitton, Prada, Hugo Boss, Ralph Lauren Polo, Monster, Løkka Boss, Anders, Jeremy Fragrance, Tibetanske strupesangsyngere, De som vet de vet</span>
     </div>
   </div>
 </body>
