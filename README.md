@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
   <title>Løkka Barbers - Barber Website</title>
@@ -224,15 +224,19 @@
 	  barberOptions.style.display = "flex";
 	}
     
-    function selectBarber(barber) {
-      var haircutDetails = document.getElementById("haircut-details");
-      var checkoutSection = document.getElementById("checkout-section");
-      
-      haircutDetails.innerHTML += "<br>Selected Barber: " + barber;
-      checkoutSection.classList.add("fade-in");
-      checkoutSection.style.display = "block";
-      document.getElementById("selected-barber").innerText = "Selected Barber: " + barber;
-    }
+function selectBarber(barber) {
+  var haircutDetails = document.getElementById("haircut-details");
+  var checkoutSection = document.getElementById("checkout-section");
+  
+  haircutDetails.innerHTML += "<br>Selected Barber: " + barber;
+  checkoutSection.classList.add("fade-in");
+  checkoutSection.style.display = "block";
+  
+  var selectedBarberDisplay = document.getElementById("selected-barber-display");
+  selectedBarberDisplay.innerText = "Selected Barber: " + barber;
+  document.getElementById("selected-barber").value = barber;
+}
+
     
     function submitCheckoutForm() {
       var checkoutForm = document.getElementById("checkout-form");
@@ -290,9 +294,10 @@
           <input type="hidden" id="selected-haircut" name="selected-haircut">
           <div id="selected-haircut-display" style="font-weight: bold;"></div>
         </div>
-	<div class="form-field">
-          <span id="selected-barber" style="font-weight: bold;"></span>
-        </div>
+<div class="form-field">
+  <input type="hidden" id="selected-barber" name="selected-barber">
+  <div id="selected-barber-display" style="font-weight: bold;"></div>
+</div>
         <div class="form-field">
           <label for="cost">Cost:</label>
           <input type="text" id="cost" name="cost" value="80 kr" readonly>
