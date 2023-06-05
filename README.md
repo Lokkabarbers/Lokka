@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
   <title>Løkka Barbers - Barber Website</title>
@@ -282,6 +282,7 @@
     <div id="checkout-section" class="checkout-section" style="display: none;">
       <h2 class="checkout-title">Checkout</h2>
       <form id="checkout-form" class="checkout-form" onsubmit="event.preventDefault(); submitCheckoutForm();">
+	<input type="hidden" name="_captcha" value="false">
         <div class="form-field">
           <span id="Betaling" style="font-weight: bold;"></span>
         </div>
