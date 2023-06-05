@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
   <title>Løkka Barbers - Barber Website</title>
@@ -415,8 +415,8 @@
     </div>
     
     <div class="footer">
-      <span style="font-size: 12px;">Lagd av Julian Philip Hafell</span> /* Decreased font size to fit smaller screen */
-      <span style="font-size: 12px;">Sponsors: Gucci, Louis Vuitton, Prada, Hugo Boss, Ralph Lauren Polo, Monster, Løkka Boss, Anders</span> /* Decreased font size to fit smaller screen */
+      <span style="font-size: 12px;">Lagd av Julian Philip Hafell</span> /
+      <span style="font-size: 12px;">Sponsors: Gucci, Louis Vuitton, Prada, Hugo Boss, Ralph Lauren Polo, Monster, Løkka Boss, Anders</span> 
     </div>
   </div>
 </body>
