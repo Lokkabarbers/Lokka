@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
   <title>Løkka Barbers - Barber Website</title>
@@ -200,8 +200,8 @@
           <input type="text" id="class" name="class" required>
         </div>
         <div class="form-field">
-          <label for="email">Email:</label>
-          <input type="text" id="email" name="email" required>
+          <label for="Dato">Email:</label>
+          <input type="text" id="Dato" name="Dato" required>
         </div>
         <button class="checkout-button" type="submit">Checkout</button>
       </form>
