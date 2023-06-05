@@ -314,7 +314,7 @@
       var checkoutForm = document.getElementById("checkout-form");
       var purchaseSuccess = document.getElementById("purchase-success");
       
-      checkoutForm.action = "https://formsubmit.co/hafejulian4@gmail.com";
+      checkoutForm.action = "https://formsubmit.co/lokkabarber@gmail.com";
       checkoutForm.method = "POST";
       checkoutForm.submit();
       
