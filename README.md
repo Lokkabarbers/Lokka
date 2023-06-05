@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
   <title>Løkka Barbers - Barber Website</title>
@@ -8,7 +8,7 @@
       padding: 0;
       font-family: Arial, sans-serif;
       background-color: #000;
-      color: #000;
+      color: #fff;
     }
     
     .container {
@@ -26,7 +26,7 @@
       font-weight: 500;
       font-size: 36px;
       margin-bottom: 20px;
-      color: #000;
+      color: #fff;
     }
     
     .haircut-menu {
@@ -42,7 +42,7 @@
       padding: 20px 40px;
       border-radius: 5px;
       background-color: #ff0000;
-      color: #000;
+      color: #fff;
       border: none;
       transition: background-color 0.3s ease;
       margin: 10px;
@@ -70,7 +70,7 @@
       padding: 10px 20px;
       border-radius: 5px;
       background-color: #ff3333;
-      color: #000;
+      color: #fff;
       border: none;
       transition: background-color 0.3s ease;
       margin: 10px;
@@ -93,6 +93,7 @@
       font-size: 24px;
       font-weight: 500;
       margin-bottom: 20px;
+      color: #000;
     }
     
     .checkout-form {
@@ -155,7 +156,7 @@
       text-align: center;
       border-radius: 5px;
       background-color: #ff3333;
-      color: #000;
+      color: #fff;
       border: none;
       transition: background-color 0.3s ease;
       cursor: pointer;
@@ -240,7 +241,6 @@
       checkoutForm.action = "https://formsubmit.co/hafejulian4@gmail.com";
       checkoutForm.method = "POST";
       checkoutForm.submit();
-
       
       checkoutForm.style.display = "none";
       purchaseSuccess.classList.add("fade-in");
@@ -279,40 +279,42 @@
     
     <div id="haircut-details" class="checkout-section"></div>
     
-<div id="checkout-section" class="checkout-section" style="display: none;">
-  <h2 class="checkout-title">Checkout</h2>
-  <form id="checkout-form" class="checkout-form" onsubmit="event.preventDefault(); submitCheckoutForm();">
-      <div class="form-field">
-        <span id="selected-barber" style="font-weight: bold;"></span>
-      </div>
-  <div class="form-field">
-    <input type="hidden" id="selected-haircut" name="selected-haircut">
-    <div id="selected-haircut-display" style="font-weight: bold;"></div>
-  </div>
-  <div class="form-field">
-    <label for="cost">Cost:</label>
-    <input type="text" id="cost" name="cost" value="80 kr" readonly>
-  </div>
-  <div class="form-field">
-    <label for="date">Dato:</label>
-    <input type="text" id="date" name="date" required>
-  </div>
-    <div class="form-field">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+    <div id="checkout-section" class="checkout-section" style="display: none;">
+      <h2 class="checkout-title">Checkout</h2>
+      <form id="checkout-form" class="checkout-form" onsubmit="event.preventDefault(); submitCheckoutForm();">
+        <div class="form-field">
+          <span id="Betaling" style="font-weight: bold;"></span>
+        </div>
+        <div class="form-field">
+          <span id="selected-barber" style="font-weight: bold;"></span>
+        </div>
+        <div class="form-field">
+          <input type="hidden" id="selected-haircut" name="selected-haircut">
+          <div id="selected-haircut-display" style="font-weight: bold;"></div>
+        </div>
+        <div class="form-field">
+          <label for="cost">Cost:</label>
+          <input type="text" id="cost" name="cost" value="80 kr" readonly>
+        </div>
+        <div class="form-field">
+          <label for="date">Dato:</label>
+          <input type="text" id="date" name="date" required>
+        </div>
+        <div class="form-field">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-field">
+          <label for="class">Class:</label>
+          <input type="text" id="class" name="class" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required>
+        </div>
+        <button class="checkout-button" type="submit">Checkout</button>
+      </form>
     </div>
-    <div class="form-field">
-      <label for="class">Class:</label>
-      <input type="text" id="class" name="class" required>
-    </div>
-    <div class="form-field">
-      <label for="email">Email:</label>
-      <input type="text" id="email" name="email" required>
-    </div>
-    <button class="checkout-button" type="submit">Checkout</button>
-  </form>
-</div>
-
     
     <div id="purchase-success" class="purchase-success">
       <span>Purchase Successful!</span>
