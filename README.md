@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
   <title>Løkka Barbers - Barber Website</title>
@@ -98,7 +98,7 @@
       margin-bottom: 10px;
     }
     
-    .form-field input[type="text"] {
+    .form-field input[type="text"], .form-field input[type="date"] {
       width: 100%;
       padding: 12px;
       font-size: 16px;
@@ -107,7 +107,7 @@
       transition: border-color 0.3s ease;
     }
     
-    .form-field input[type="text"]:focus {
+    .form-field input[type="text"]:focus, .form-field input[type="date"]:focus {
       outline: none;
       border-color: #2196f3;
     }
@@ -130,13 +130,45 @@
       animation: fadeIn 0.5s ease;
     }
     
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
+    .checkout-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 5px;
+      background-color: #2196f3;
+      color: #fff;
+      border: none;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .checkout-button:hover {
+      background-color: #1976d2;
+    }
+    
+    .form-field label {
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      color: #444;
+    }
+    
+    .form-field input[type="text"], .form-field input[type="date"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      transition: border-color 0.3s ease;
+      color: #444;
+    }
+    
+    .form-field input[type="text"]:focus, .form-field input[type="date"]:focus {
+      outline: none;
+      border-color: #2196f3;
     }
   </style>
   <script>
@@ -156,11 +188,16 @@
       haircutDetails.innerHTML += "<br>Selected Barber: " + barber;
       checkoutSection.classList.add("fade-in");
       checkoutSection.style.display = "block";
+      document.getElementById("selected-barber").innerText = "Selected Barber: " + barber;
     }
     
     function submitCheckoutForm() {
       var checkoutForm = document.getElementById("checkout-form");
       var purchaseSuccess = document.getElementById("purchase-success");
+      
+      checkoutForm.action = "https://formsubmit.co/hafejulian4@gmail.com";
+      checkoutForm.method = "POST";
+      checkoutForm.submit();
       
       checkoutForm.style.display = "none";
       purchaseSuccess.classList.add("fade-in");
@@ -190,7 +227,18 @@
     
     <div id="checkout-section" class="checkout-section" style="display: none;">
       <h2 class="checkout-title">Checkout</h2>
-      <form id="checkout-form" class="checkout-form" action="https://formsubmit.co/hafejulian4@gmail.com" method="POST">
+      <div class="form-field">
+        <span id="selected-barber" style="font-weight: bold;"></span>
+      </div>
+      <div class="form-field">
+        <label for="date">Dato:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="form-field">
+        <label for="cost">Cost:</label>
+        <input type="text" id="cost" name="cost" value="80 kr" readonly>
+      </div>
+      <form id="checkout-form" class="checkout-form" onsubmit="event.preventDefault(); submitCheckoutForm();">
         <div class="form-field">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required>
@@ -200,8 +248,8 @@
           <input type="text" id="class" name="class" required>
         </div>
         <div class="form-field">
-          <label for="Dato">Email:</label>
-          <input type="text" id="Dato" name="Dato" required>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required>
         </div>
         <button class="checkout-button" type="submit">Checkout</button>
       </form>
