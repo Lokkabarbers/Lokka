@@ -8,7 +8,7 @@
       padding: 0;
       font-family: Arial, sans-serif;
       background-color: #000;
-      color: #fff;
+      color: #000;
     }
     
     .container {
@@ -26,7 +26,7 @@
       font-weight: 500;
       font-size: 36px;
       margin-bottom: 20px;
-      color: #fff;
+      color: #000;
     }
     
     .haircut-menu {
@@ -42,7 +42,7 @@
       padding: 20px 40px;
       border-radius: 5px;
       background-color: #ff0000;
-      color: #fff;
+      color: #000;
       border: none;
       transition: background-color 0.3s ease;
       margin: 10px;
@@ -70,7 +70,7 @@
       padding: 10px 20px;
       border-radius: 5px;
       background-color: #ff3333;
-      color: #fff;
+      color: #000;
       border: none;
       transition: background-color 0.3s ease;
       margin: 10px;
@@ -109,7 +109,7 @@
       font-size: 18px;
       font-weight: 500;
       margin-bottom: 10px;
-      color: #fff;
+      color: #000;
     }
     
     .form-field input[type="text"],
@@ -120,7 +120,7 @@
       border-radius: 5px;
       border: 1px solid #ccc;
       transition: border-color 0.3s ease;
-      color: #fff;
+      color: #000;
     }
     
     .form-field input[type="text"]:focus,
@@ -155,7 +155,7 @@
       text-align: center;
       border-radius: 5px;
       background-color: #ff3333;
-      color: #fff;
+      color: #000;
       border: none;
       transition: background-color 0.3s ease;
       cursor: pointer;
@@ -170,7 +170,7 @@
       font-size: 18px;
       font-weight: 500;
       margin-bottom: 10px;
-      color: #fff;
+      color: #000;
     }
     
     .form-field input[type="text"],
@@ -181,7 +181,7 @@
       border-radius: 5px;
       border: 1px solid #ccc;
       transition: border-color 0.3s ease;
-      color: #fff;
+      color: #000;
     }
     
     .form-field input[type="text"]:focus,
@@ -240,6 +240,7 @@
       checkoutForm.action = "https://formsubmit.co/hafejulian4@gmail.com";
       checkoutForm.method = "POST";
       checkoutForm.submit();
+
       
       checkoutForm.style.display = "none";
       purchaseSuccess.classList.add("fade-in");
@@ -280,6 +281,7 @@
     
 <div id="checkout-section" class="checkout-section" style="display: none;">
   <h2 class="checkout-title">Checkout</h2>
+  <form id="checkout-form" class="checkout-form" onsubmit="event.preventDefault(); submitCheckoutForm();">
       <div class="form-field">
         <span id="selected-barber" style="font-weight: bold;"></span>
       </div>
@@ -288,14 +290,13 @@
     <div id="selected-haircut-display" style="font-weight: bold;"></div>
   </div>
   <div class="form-field">
-    <label for="date">Dato:</label>
-    <input type="date" id="date" name="date" required>
-  </div>
-  <div class="form-field">
     <label for="cost">Cost:</label>
     <input type="text" id="cost" name="cost" value="80 kr" readonly>
   </div>
-  <form id="checkout-form" class="checkout-form" onsubmit="event.preventDefault(); submitCheckoutForm();">
+  <div class="form-field">
+    <label for="date">Dato:</label>
+    <input type="text" id="date" name="date" required>
+  </div>
     <div class="form-field">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
