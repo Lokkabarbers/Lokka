@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
   <title>Løkka Barbers - Barber Website</title>
@@ -257,17 +257,17 @@ function selectBarber(barber) {
     <h1>Løkka Barbers</h1>
     <div class="haircut-menu">
       <button id="boosie-fade" class="haircut-option" onclick="showBarberOptions('Boosie Fade')">Boosie Fade</button>
-      <button id="R9 Fade" class="haircut-option" onclick="showBarberOptions('R9 Fade')">R9 Fade</button>
+      <button id="r9" class="haircut-option" onclick="showBarberOptions('R9')">R9</button>
       <button id="skin-fade" class="haircut-option" onclick="showBarberOptions('Skin Fade')">Skin Fade</button>
       <button id="løkka-spesial" class="haircut-option" onclick="showBarberOptions('Løkka spesial')">Løkka spesial</button>
       <button id="fade-1" class="haircut-option" onclick="showBarberOptions('Fade 1')">Fade 1</button>
-      <button id="Low Taper Fade" class="haircut-option" onclick="showBarberOptions('Low Taper Fade')">Low Taper Fade</button>
-      <button id="Gabriel Garcialol" class="haircut-option" onclick="showBarberOptions('Gabriel Garcialol')">Gabriel Garcialol</button>
-      <button id="Anders" class="haircut-option" onclick="showBarberOptions('Anders')">Anders</button>
+      <button id="fadelolsex" class="haircut-option" onclick="showBarberOptions('Fadelolsex')">Fadelolsex</button>
+      <button id="fade-roblox" class="haircut-option" onclick="showBarberOptions('Fade ROBLOX!')">Fade ROBLOX!</button>
+      <button id="cut-1" class="haircut-option" onclick="showBarberOptions('Cut 1')">Cut 1</button>
       <button id="nigboss999" class="haircut-option" onclick="showBarberOptions('Nigboss999')">Nigboss999</button>
-      <button id="Bart Simpson Moment" class="haircut-option" onclick="showBarberOptions('Bart Simpson Moment')">Bart Simpson Moment</button>
+      <button id="cut-ear" class="haircut-option" onclick="showBarberOptions('Cut ear')">Cut ear</button>
       <button id="earwax-1" class="haircut-option" onclick="showBarberOptions('Earwax 1')">Earwax 1</button>
-      <button id="Dreadlocks" class="haircut-option" onclick="showBarberOptions('Dreadlocks')">Dreadlocks</button>
+      <button id="rip-off-ear-1" class="haircut-option" onclick="showBarberOptions('Rip off ear 1')">Rip off ear 1</button>
       <button id="bordtennis" class="haircut-option" onclick="showBarberOptions('Bordtennis')">Bordtennis</button>
       <button id="aljosa" class="haircut-option" onclick="showBarberOptions('Aljosa')">Aljosa</button>
     </div>
@@ -327,8 +327,8 @@ function selectBarber(barber) {
     </div>
     
     <div class="footer">
-      <span style="font-size: 20px;">Laget av Julian Philip Hafell</span>
-      <span style="font-size: 20px;">Sponsors: Gucci, Louis Vuitton, Prada, Hugo Boss, Ralph Lauren Polo, Monster, Løkka Boss, Anders, Jeremy Fragrance, Tibetanske strupesangsyngere, De som vet de vet</span>
+      <span style="font-size: 20px;">Lagd av Julian Philip Hafell</span>
+      <span style="font-size: 20px;">Sponsors: Gucci, Louis Vuitton, Prada, Hugo Boss, Ralph Lauren Polo, Monster, Løkka Boss, Anders</span>
     </div>
   </div>
 </body>
