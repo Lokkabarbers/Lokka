@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
   <title>Løkka Barbers - Barber Website</title>
@@ -287,12 +287,11 @@
           <span id="Betaling" style="font-weight: bold;"></span>
         </div>
         <div class="form-field">
-          <input type="hidden" id="selected-barbername="selected-barber">
-          <span id="selected-barber" style="font-weight: bold;"></span>
-        </div>
-        <div class="form-field">
           <input type="hidden" id="selected-haircut" name="selected-haircut">
           <div id="selected-haircut-display" style="font-weight: bold;"></div>
+        </div>
+        <div class="form-field">
+	<input type="hidden" id="selected-barber" name="selected-barber">
         </div>
         <div class="form-field">
           <label for="cost">Cost:</label>
