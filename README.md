@@ -392,7 +392,7 @@ function selectBarber(barber) {
       <div class="barber-menu">
         <button class="barber-option" onclick="selectBarber('Anton Fylling Byfuglien')">Anton Fylling Byfuglien</button>
         <button class="barber-option" onclick="selectBarber('Aljosa Babic')">Aljosa Babic</button>
-        <button class="barber-option" onclick="selectBarber('Alex')">Alex</button>
+        <button class="barber-option" onclick="selectBarber('Anders Behring Breivik')">Alex</button>
       </div>
     </div>
     
