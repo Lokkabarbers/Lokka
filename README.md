@@ -23,23 +23,82 @@
       margin-bottom: 20px;
     }
     
-    .form-group {
+    .haircut-menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    
+    .haircut-option {
+      cursor: pointer;
+      font-size: 20px;
+      padding: 20px 40px;
+      border-radius: 5px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      transition: background-color 0.3s ease;
+      margin: 10px;
+      width: 180px;
+    }
+    
+    .haircut-option:hover {
+      background-color: #45a049;
+    }
+    
+    .barber-menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    
+    .barber-option {
+      cursor: pointer;
+      font-size: 18px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #2196f3;
+      color: #fff;
+      border: none;
+      transition: background-color 0.3s ease;
+      margin: 10px;
+      width: 180px;
+    }
+    
+    .barber-option:hover {
+      background-color: #1976d2;
+    }
+    
+    .checkout-section {
+      margin-top: 40px;
+      display: none;
+    }
+    
+    .checkout-title {
+      font-size: 24px;
+      font-weight: 500;
       margin-bottom: 20px;
     }
     
-    .form-row {
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: -10px;
-      margin-right: -10px;
+    .checkout-form {
+      text-align: left;
+      margin-top: 20px;
     }
     
-    .col {
-      flex: 1 0 50%;
-      padding: 0 10px;
+    .form-field {
+      margin-bottom: 20px;
     }
     
-    .form-control {
+    .form-field label {
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    
+    .form-field input[type="text"] {
       width: 100%;
       padding: 12px;
       font-size: 16px;
@@ -48,51 +107,109 @@
       transition: border-color 0.3s ease;
     }
     
-    .form-control:focus {
+    .form-field input[type="text"]:focus {
       outline: none;
       border-color: #2196f3;
     }
     
-    textarea.form-control {
-      height: auto;
+    .purchase-success {
+      display: none;
+      font-size: 24px;
+      color: #4caf50;
+      margin-top: 40px;
     }
     
-    .btn {
-      display: inline-block;
-      font-size: 18px;
-      padding: 12px 20px;
-      border-radius: 5px;
-      background-color: #212121;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
+    .purchase-success::before {
+      content: "\2714";
+      font-size: 32px;
+      display: block;
+      margin-bottom: 20px;
     }
     
-    .btn:hover {
-      background-color: #000;
+    .fade-in {
+      animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   </style>
+  <script>
+    function showBarberOptions(haircut) {
+      var haircutDetails = document.getElementById("haircut-details");
+      var barberOptions = document.getElementById("barber-options");
+      
+      haircutDetails.innerHTML = "Selected Haircut: " + haircut + "<br>Cost: 80 kr";
+      barberOptions.classList.add("fade-in");
+      barberOptions.style.display = "flex";
+    }
+    
+    function selectBarber(barber) {
+      var haircutDetails = document.getElementById("haircut-details");
+      var checkoutSection = document.getElementById("checkout-section");
+      
+      haircutDetails.innerHTML += "<br>Selected Barber: " + barber;
+      checkoutSection.classList.add("fade-in");
+      checkoutSection.style.display = "block";
+    }
+    
+    function submitCheckoutForm() {
+      var checkoutForm = document.getElementById("checkout-form");
+      var purchaseSuccess = document.getElementById("purchase-success");
+      
+      checkoutForm.style.display = "none";
+      purchaseSuccess.classList.add("fade-in");
+      purchaseSuccess.style.display = "block";
+    }
+  </script>
 </head>
 <body>
   <div class="container">
     <h1>Løkka Barbers</h1>
-    <form target="_blank" action="https://formsubmit.co/hafejulian4@gmail.com" method="POST">
-      <div class="form-group">
-        <div class="form-row">
-          <div class="col">
-            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-          </div>
-          <div class="col">
-            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-          </div>
+    <div class="haircut-menu">
+      <button class="haircut-option" onclick="showBarberOptions('Boosie Fade')">Boosie Fade</button>
+      <button class="haircut-option" onclick="showBarberOptions('R9')">R9</button>
+      <button class="haircut-option" onclick="showBarberOptions('Skin Fade')">Skin Fade</button>
+      <button class="haircut-option" onclick="showBarberOptions('Løkka spesial')">Løkka spesial</button>
+    </div>
+    
+    <div id="barber-options" class="fade-in" style="display: none;">
+      <h2>Choose a Barber</h2>
+      <div class="barber-menu">
+        <button class="barber-option" onclick="selectBarber('Anton Fylling Byfuglien')">Anton Fylling Byfuglien</button>
+        <button class="barber-option" onclick="selectBarber('Aljosa Babic')">Aljosa Babic</button>
+      </div>
+    </div>
+    
+    <div id="haircut-details" class="checkout-section"></div>
+    
+    <div id="checkout-section" class="checkout-section" style="display: none;">
+      <h2 class="checkout-title">Checkout</h2>
+      <form id="checkout-form" class="checkout-form" action="https://formsubmit.co/hafejulian4@gmail.com" method="POST">
+        <div class="form-field">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
         </div>
-      </div>
-      <div class="form-group">
-        <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-    </form>
+        <div class="form-field">
+          <label for="class">Class:</label>
+          <input type="text" id="class" name="class" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required>
+        </div>
+        <button class="checkout-button" type="submit">Checkout</button>
+      </form>
+    </div>
+    
+    <div id="purchase-success" class="purchase-success">
+      <span>Purchase Successful!</span>
+    </div>
   </div>
 </body>
 </html>
