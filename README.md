@@ -290,8 +290,8 @@
           <input type="hidden" id="selected-haircut" name="selected-haircut">
           <div id="selected-haircut-display" style="font-weight: bold;"></div>
         </div>
-        <div class="form-field">
-	<input type="hidden" id="selected-barber" name="selected-barber">
+	<div class="form-field">
+          <span id="selected-barber" style="font-weight: bold;"></span>
         </div>
         <div class="form-field">
           <label for="cost">Cost:</label>
