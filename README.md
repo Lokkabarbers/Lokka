@@ -349,6 +349,7 @@
       <button id="r9" class="haircut-option" onclick="showBarberOptions('R9')">R9</button>
       <button id="skin-fade" class="haircut-option" onclick="showBarberOptions('Skin Fade')">Skin Fade</button>
       <button id="løkka-spesial" class="haircut-option" onclick="showBarberOptions('Løkka spesial')">Løkka spesial</button>
+      <button id="low taper fade" class="haircut-option" onclick="showBarberOptions('Low Taper Fade')">Low Taper Fade</button>
       <button id="fade" class="haircut-option" onclick="showBarberOptions('Fade')">Fade</button>
       <button id="tortur" class="haircut-option" onclick="showBarberOptions('Tortur')">Tortur</button>
       <button id="omskjæring" class="haircut-option" onclick="showBarberOptions('Omskjæring')">Omskjæring</button>
