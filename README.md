@@ -346,17 +346,20 @@
     <h1>Løkka Barbers</h1>
     <div class="haircut-menu">
       <button id="boosie-fade" class="haircut-option" onclick="showBarberOptions('Boosie Fade')">Boosie Fade</button>
+      <button id="moon-boosie-fade" class="haircut-option" onclick="showBarberOptions('Moon Boosie Fade')">Moon Boosie Fade</button>
       <button id="r9" class="haircut-option" onclick="showBarberOptions('R9')">R9</button>
       <button id="skin-fade" class="haircut-option" onclick="showBarberOptions('Skin Fade')">Skin Fade</button>
       <button id="løkka-spesial" class="haircut-option" onclick="showBarberOptions('Løkka spesial')">Løkka spesial</button>
-      <button id="low taper fade" class="haircut-option" onclick="showBarberOptions('Low Taper Fade')">Low Taper Fade</button>
+      <button id="low-taper-fade" class="haircut-option" onclick="showBarberOptions('Low Taper Fade')">Low Taper Fade</button>
+      <button id="high-taper-fade" class="haircut-option" onclick="showBarberOptions('High Taper Fade')">High Taper Fade</button>
+      <button id="medium-taper-fade" class="haircut-option" onclick="showBarberOptions('Medium Taper Fade')">Medium Taper Fade</button>
       <button id="fade" class="haircut-option" onclick="showBarberOptions('Fade')">Fade</button>
       <button id="tortur" class="haircut-option" onclick="showBarberOptions('Tortur')">Tortur</button>
       <button id="omskjæring" class="haircut-option" onclick="showBarberOptions('Omskjæring')">Omskjæring</button>
       <button id="flintskallet" class="haircut-option" onclick="showBarberOptions('Flintskallet')">Flintskallet</button>
       <button id="spotifypremium5" class="haircut-option" onclick="showBarberOptions('Spotifypremium5')">Spotifypremium5</button>
       <button id="gabrielgarcialol" class="haircut-option" onclick="showBarberOptions('GabrielGarcialol')">GabrielGarcialol</button>
-      <button id="rumphårfjerning" class="haircut-option" onclick="showBarberOptions('Rumphårfjerning')">Rumphårfjerning</button>
+      <button id="rumpehår braids" class="haircut-option" onclick="showBarberOptions('Rumphårfjerning')">Rumphårfjerning</button>
       <button id="mullet" class="haircut-option" onclick="showBarberOptions('Mullet')">Mullet</button>
       <button id="bordtennis" class="haircut-option" onclick="showBarberOptions('Bordtennis')">Bordtennis</button>
       <button id="omskjæring-ekstrem" class="haircut-option" onclick="showBarberOptions('Omskjæring Ekstrem')">Omskjæring Ekstrem</button>
