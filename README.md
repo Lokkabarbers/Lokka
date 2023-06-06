@@ -363,6 +363,13 @@
       <button id="mullet" class="haircut-option" onclick="showBarberOptions('Mullet')">Mullet</button>
       <button id="bordtennis" class="haircut-option" onclick="showBarberOptions('Bordtennis')">Bordtennis</button>
       <button id="omskjæring-ekstrem" class="haircut-option" onclick="showBarberOptions('Omskjæring Ekstrem')">Omskjæring Ekstrem</button>
+      
+          <div id="consent-section" class="checkout-section">
+      <h2>Samtykke</h2>
+      <p>Ved å fortsette med kjøpet samtykker du til følgende:</p>
+      <p>Uansett hva som skjer så er det DIN feil om håret ditt blir ødelagt/brent/stygt. Det er din skyld hvis du blir misfornøyd.</p>
+      <button class="checkout-button" onclick="showHaircutMenu()">Godta og fortsett</button>
+    </div>
     </div>
     
     <div id="barber-options" class="fade-in" style="display: none;">
