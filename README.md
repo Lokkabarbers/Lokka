@@ -349,11 +349,11 @@
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUUYrjwzwZopOtODzwrcb3sAsTzBnOrQs1PQ&usqp=CAU" class="image-position-7">
     <img src="https://media.tenor.com/7_ZjV-cIL9YAAAAd/skull-grin.gif" class="image-position-8">
     <img src="https://i.gifer.com/XwI7.gif" class="image-position-9">
-    <img src="https://media.tenor.com/FQ38aKxDsr4AAAAC/skull-glowing-eye.gif" class="image-position-10">
+    <img src="https://media.tenor.com/IgqQta2JOeMAAAAj/skull-skull-emoji.gif" class="image-position-10">
     <img src="https://media.tenor.com/7_ZjV-cIL9YAAAAd/skull-grin.gif" class="image-position-11">
     <img src="https://media.tenor.com/FQ38aKxDsr4AAAAC/skull-glowing-eye.gif" class="image-position-12">
     <img src="https://media.tenor.com/7_ZjV-cIL9YAAAAd/skull-grin.gif" class="image-position-13">
-    <img src="https://media.tenor.com/FQ38aKxDsr4AAAAC/skull-glowing-eye.gif" class="image-position-14">
+    <img src="https://media.tenor.com/IgqQta2JOeMAAAAj/skull-skull-emoji.gif" class="image-position-14">
     <img src="https://i.gifer.com/XwI7.gif" class="image-position-15">
   </div>
   <div class="container">
