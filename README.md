@@ -311,16 +311,22 @@
     }
     
     function submitCheckoutForm() {
-      var checkoutForm = document.getElementById("checkout-form");
-      var purchaseSuccess = document.getElementById("purchase-success");
-      
-      checkoutForm.action = "https://formsubmit.co/lokkabarber@gmail.com";
-      checkoutForm.method = "POST";
-      checkoutForm.submit();
-      
-      checkoutForm.style.display = "none";
-      purchaseSuccess.classList.add("fade-in");
-      purchaseSuccess.style.display = "block";
+      var agreementCheckbox = document.getElementById("agreement-checkbox");
+
+      if (agreementCheckbox.checked) {
+        var checkoutForm = document.getElementById("checkout-form");
+        var purchaseSuccess = document.getElementById("purchase-success");
+
+        checkoutForm.action = "https://formsubmit.co/lokkabarber@gmail.com";
+        checkoutForm.method = "POST";
+        checkoutForm.submit();
+
+        checkoutForm.style.display = "none";
+        purchaseSuccess.classList.add("fade-in");
+        purchaseSuccess.style.display = "block";
+      } else {
+        alert("You must consent before completing the purchase.");
+      }
     }
   </script>
 </head>
