@@ -197,81 +197,96 @@
     /* Image positions */
     
     .image-position-1 {
-      top: 20%; /* Adjusted position to spread pictures more */
-      left: 20%; /* Adjusted position to spread pictures more */
+      top: 5%; /* Adjusted position to spread pictures more */
+      left: 5%; /* Adjusted position to spread pictures more */
+      width: 80%; /* Decreased size to fit smaller screen */
     }
     
     .image-position-2 {
       bottom: 0;
       right: 0;
+      width: 30%; /* Decreased size to fit smaller screen */
     }
     
     .image-position-3 {
-      top: 30%; /* Adjusted position to spread pictures more */
-      right: 30%; /* Adjusted position to spread pictures more */
+      top: 10%; /* Adjusted position to spread pictures more */
+      right: 10%; /* Adjusted position to spread pictures more */
+      width: 30%; /* Decreased size to fit smaller screen */
     }
     
     .image-position-4 {
-      bottom: 40%; /* Adjusted position to spread pictures more */
+      bottom: 25%; /* Adjusted position to spread pictures more */
       right: 0;
+      width: 30%; /* Decreased size to fit smaller screen */
     }
     
     .image-position-5 {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      width: 60%; /* Decreased size to fit smaller screen */
     }
     
     /* Additional image positions */
     
     .image-position-6 {
-      bottom: 60%; /* Adjusted position to spread pictures more */
-      left: 10%;
+      bottom: 49%; /* Adjusted position to spread pictures more */
+      left: 5%;
+      width: 20%; /* Decreased size to fit smaller screen */
     }
     
     .image-position-7 {
-      top: 60%; /* Adjusted position to spread pictures more */
-      right: 10%;
+      top: 40%; /* Adjusted position to spread pictures more */
+      right: 5%;
+      width: 30%; /* Decreased size to fit smaller screen */
     }
     
     .image-position-8 {
-      top: 10%; /* Adjusted position to spread pictures more */
-      right: 10%;
+      top: 5%; /* Adjusted position to spread pictures more */
+      right: 5%;
+      width: 30%; /* Decreased size to fit smaller screen */
     }
     
     .image-position-9 {
-      top: 10%; /* Adjusted position to spread pictures more */
-      left: 10%;
+      top: 5%; /* Adjusted position to spread pictures more */
+      left: 5%;
+      width: 30%; /* Decreased size to fit smaller screen */
     }
     
     .image-position-10 {
-      top: 70%; /* Adjusted position to spread pictures more */
+      top: 60%; /* Adjusted position to spread pictures more */
       left: 30%;
+      width: 30%; /* Decreased size to fit smaller screen */
     }
     
     .image-position-11 {
-      bottom: 70%; /* Adjusted position to spread pictures more */
+      bottom: 60%; /* Adjusted position to spread pictures more */
       left: 30%;
+      width: 30%; /* Decreased size to fit smaller screen */
     }
     
     .image-position-12 {
-      top: 80%; /* Adjusted position to spread pictures more */
+      top: 70%; /* Adjusted position to spread pictures more */
       right: 40%;
+      width: 30%; /* Decreased size to fit smaller screen */
     }
     
     .image-position-13 {
-      bottom: 80%; /* Adjusted position to spread pictures more */
+      bottom: 70%; /* Adjusted position to spread pictures more */
       right: 40%;
+      width: 30%; /* Decreased size to fit smaller screen */
     }
     
     .image-position-14 {
-      bottom: 20%; /* Adjusted position to spread pictures more */
-      left: 20%;
+      bottom: 5%; /* Adjusted position to spread pictures more */
+      left: 5%;
+      width: 30%; /* Decreased size to fit smaller screen */
     }
     
     .image-position-15 {
-      bottom: 20%; /* Adjusted position to spread pictures more */
-      right: 20%;
+      bottom: 5%; /* Adjusted position to spread pictures more */
+      right: 5%;
+      width: 30%; /* Decreased size to fit smaller screen */
     }
   </style>
   <script>
@@ -325,20 +340,20 @@
 </head>
 <body>
   <div class="background-images">
-    <img src="b " class="image-position-1">
+    <img src="https://media.tenor.com/7_ZjV-cIL9YAAAAd/skull-grin.gif" class="image-position-1">
     <img src="https://media.tenor.com/_X08GvNjovQAAAAC/skull-spinning-skull.gif" class="image-position-2">
     <img src="https://media.tenor.com/7_ZjV-cIL9YAAAAd/skull-grin.gif" class="image-position-3">
     <img src="https://i.gifer.com/XwI7.gif" class="image-position-4">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUUYrjwzwZopOtODzwrcb3sAsTzBnOrQs1PQ&usqp=CAU" class="image-position-5">
+    <img src="https://media.tenor.com/FQ38aKxDsr4AAAAC/skull-glowing-eye.gif" class="image-position-5">
     <img src="https://i.pinimg.com/originals/90/93/fb/9093fb23e005aabe2ec21015befdef40.gif" class="image-position-6">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUUYrjwzwZopOtODzwrcb3sAsTzBnOrQs1PQ&usqp=CAU" class="image-position-7">
     <img src="https://media.tenor.com/7_ZjV-cIL9YAAAAd/skull-grin.gif" class="image-position-8">
     <img src="https://i.gifer.com/XwI7.gif" class="image-position-9">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUUYrjwzwZopOtODzwrcb3sAsTzBnOrQs1PQ&usqp=CAU" class="image-position-10">
-    <img src="https://media.tenor.com/_X08GvNjovQAAAAC/skull-spinning-skull.gif" class="image-position-11">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa03LGrorNKOHrCZP5BZ1NYH6wVgA9qZ9WZE4_N8JxvHbq-jBE_Jij_fyaU4jAqKh4az4&usqp=CAU" class="image-position-12">
-    <img src="t " class="image-position-13">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa03LGrorNKOHrCZP5BZ1NYH6wVgA9qZ9WZE4_N8JxvHbq-jBE_Jij_fyaU4jAqKh4az4&usqp=CAU" class="image-position-14">
+    <img src="https://media.tenor.com/FQ38aKxDsr4AAAAC/skull-glowing-eye.gif" class="image-position-10">
+    <img src="https://media.tenor.com/7_ZjV-cIL9YAAAAd/skull-grin.gif" class="image-position-11">
+    <img src="https://media.tenor.com/FQ38aKxDsr4AAAAC/skull-glowing-eye.gif" class="image-position-12">
+    <img src="https://media.tenor.com/7_ZjV-cIL9YAAAAd/skull-grin.gif" class="image-position-13">
+    <img src="https://media.tenor.com/FQ38aKxDsr4AAAAC/skull-glowing-eye.gif" class="image-position-14">
     <img src="https://i.gifer.com/XwI7.gif" class="image-position-15">
   </div>
   <div class="container">
@@ -419,7 +434,7 @@
     
     <div class="footer">
       <span style="font-size: 12px;">Laget av Julian Philip Hafell</span> /
-      <span style="font-size: 12px;"> Sponsors: Gucci, Louis Vuitton, Prada, Hugo Boss, Ralph Lauren Polo, Monster, Løkka Boss, Anders</span> 
+      <span style="font-size: 12px;">Sponsors: Gucci, Louis Vuitton, Prada, Hugo Boss, Ralph Lauren Polo, Monster, Løkka Boss, Anders</span> 
     </div>
   </div>
 </body>
