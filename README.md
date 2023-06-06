@@ -350,12 +350,12 @@
       <button id="skin-fade" class="haircut-option" onclick="showBarberOptions('Skin Fade')">Skin Fade</button>
       <button id="løkka-spesial" class="haircut-option" onclick="showBarberOptions('Løkka spesial')">Løkka spesial</button>
       <button id="fade" class="haircut-option" onclick="showBarberOptions('Fade')">Fade</button>
-      <button id="fadelolsex" class="haircut-option" onclick="showBarberOptions('Fadelolsex')">Fadelolsex</button>
+      <button id="tortur" class="haircut-option" onclick="showBarberOptions('Tortur')">Tortur</button>
       <button id="omskjæring" class="haircut-option" onclick="showBarberOptions('Omskjæring')">Omskjæring</button>
       <button id="flintskallet" class="haircut-option" onclick="showBarberOptions('Flintskallet')">Flintskallet</button>
       <button id="spotifypremium5" class="haircut-option" onclick="showBarberOptions('Spotifypremium5')">Spotifypremium5</button>
       <button id="gabrielgarcialol" class="haircut-option" onclick="showBarberOptions('GabrielGarcialol')">GabrielGarcialol</button>
-      <button id="earwax-1" class="haircut-option" onclick="showBarberOptions('Earwax 1')">Earwax 1</button>
+      <button id="rumphårfjerning" class="haircut-option" onclick="showBarberOptions('Rumphårfjerning')">Rumphårfjerning</button>
       <button id="mullet" class="haircut-option" onclick="showBarberOptions('Mullet')">Mullet</button>
       <button id="bordtennis" class="haircut-option" onclick="showBarberOptions('Bordtennis')">Bordtennis</button>
       <button id="omskjæring-ekstrem" class="haircut-option" onclick="showBarberOptions('Omskjæring Ekstrem')">Omskjæring Ekstrem</button>
