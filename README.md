@@ -418,8 +418,8 @@
     </div>
     
     <div class="footer">
-      <span style="font-size: 12px;">Lagd av Julian Philip Hafell</span> /
-      <span style="font-size: 12px;">Sponsors: Gucci, Louis Vuitton, Prada, Hugo Boss, Ralph Lauren Polo, Monster, Løkka Boss, Anders</span> 
+      <span style="font-size: 12px;">Laget av Julian Philip Hafell</span> /
+      <span style="font-size: 12px;"> Sponsors: Gucci, Louis Vuitton, Prada, Hugo Boss, Ralph Lauren Polo, Monster, Løkka Boss, Anders</span> 
     </div>
   </div>
 </body>
