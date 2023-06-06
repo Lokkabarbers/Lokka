@@ -1,4 +1,3 @@
-
 <html>
 <head>
   <title>Løkka Barbers - Barber Website</title>
@@ -311,22 +310,16 @@
     }
     
     function submitCheckoutForm() {
-      var agreementCheckbox = document.getElementById("agreement-checkbox");
-
-      if (agreementCheckbox.checked) {
-        var checkoutForm = document.getElementById("checkout-form");
-        var purchaseSuccess = document.getElementById("purchase-success");
-
-        checkoutForm.action = "https://formsubmit.co/lokkabarber@gmail.com";
-        checkoutForm.method = "POST";
-        checkoutForm.submit();
-
-        checkoutForm.style.display = "none";
-        purchaseSuccess.classList.add("fade-in");
-        purchaseSuccess.style.display = "block";
-      } else {
-        alert("You must consent before completing the purchase.");
-      }
+      var checkoutForm = document.getElementById("checkout-form");
+      var purchaseSuccess = document.getElementById("purchase-success");
+      
+      checkoutForm.action = "https://formsubmit.co/lokkabarber@gmail.com";
+      checkoutForm.method = "POST";
+      checkoutForm.submit();
+      
+      checkoutForm.style.display = "none";
+      purchaseSuccess.classList.add("fade-in");
+      purchaseSuccess.style.display = "block";
     }
   </script>
 </head>
@@ -369,13 +362,6 @@
       <button id="mullet" class="haircut-option" onclick="showBarberOptions('Mullet')">Mullet</button>
       <button id="bordtennis" class="haircut-option" onclick="showBarberOptions('Bordtennis')">Bordtennis</button>
       <button id="omskjæring-ekstrem" class="haircut-option" onclick="showBarberOptions('Omskjæring Ekstrem')">Omskjæring Ekstrem</button>
-      
-          <div id="consent-section" class="checkout-section">
-      <h2>Samtykke</h2>
-      <p>Ved å fortsette med kjøpet samtykker du til følgende:</p>
-      <p>Uansett hva som skjer så er det DIN feil om håret ditt blir ødelagt/brent/stygt. Det er din skyld hvis du blir misfornøyd.</p>
-      <button class="checkout-button" onclick="showHaircutMenu()">Godta og fortsett</button>
-    </div>
     </div>
     
     <div id="barber-options" class="fade-in" style="display: none;">
