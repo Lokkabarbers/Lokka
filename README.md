@@ -343,18 +343,18 @@
     <img src="https://media.tenor.com/7_ZjV-cIL9YAAAAd/skull-grin.gif" class="image-position-1">
     <img src="https://media.tenor.com/_X08GvNjovQAAAAC/skull-spinning-skull.gif" class="image-position-2">
     <img src="https://media.tenor.com/7_ZjV-cIL9YAAAAd/skull-grin.gif" class="image-position-3">
-    <img src="https://i.gifer.com/XwI7.gif" class="image-position-4">
-    <img src="https://media.tenor.com/FQ38aKxDsr4AAAAC/skull-glowing-eye.gif" class="image-position-5">
+    <img src="https://i.gifer.com/origin/74/74c9e37c16ae7936a2928751e0db3c72_w200.gif" class="image-position-4">
+    <img src="https://cdn3.emoji.gg/emojis/6323-trollskull.png" class="image-position-5">
     <img src="https://i.pinimg.com/originals/90/93/fb/9093fb23e005aabe2ec21015befdef40.gif" class="image-position-6">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUUYrjwzwZopOtODzwrcb3sAsTzBnOrQs1PQ&usqp=CAU" class="image-position-7">
+    <img src="https://i.redd.it/xkxfyqnfipd81.jpg" class="image-position-7">
     <img src="https://media.tenor.com/7_ZjV-cIL9YAAAAd/skull-grin.gif" class="image-position-8">
     <img src="https://i.gifer.com/XwI7.gif" class="image-position-9">
-    <img src="https://media.tenor.com/IgqQta2JOeMAAAAj/skull-skull-emoji.gif" class="image-position-10">
+    <img src="https://media.tenor.com/sh5xEWa2yq8AAAAC/skool-skoolspin.gif" class="image-position-10">
     <img src="https://media.tenor.com/7_ZjV-cIL9YAAAAd/skull-grin.gif" class="image-position-11">
     <img src="https://media.tenor.com/FQ38aKxDsr4AAAAC/skull-glowing-eye.gif" class="image-position-12">
     <img src="https://media.tenor.com/7_ZjV-cIL9YAAAAd/skull-grin.gif" class="image-position-13">
-    <img src="https://media.tenor.com/IgqQta2JOeMAAAAj/skull-skull-emoji.gif" class="image-position-14">
-    <img src="https://i.gifer.com/XwI7.gif" class="image-position-15">
+    <img src="https://pbs.twimg.com/media/FL_kzv5WQAQUy3m.png" class="image-position-14">
+    <img src="https://preview.redd.it/jsbfs6kf1f171.jpg?width=640&crop=smart&auto=webp&s=7df65307d3c74e7d7974782cfb83f6d3bc15176d" class="image-position-15">
   </div>
   <div class="container">
     <h1>Løkka Barbers</h1>
