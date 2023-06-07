@@ -368,7 +368,8 @@
       <button id="high-taper-fade" class="haircut-option" onclick="showBarberOptions('High Taper Fade')">High Taper Fade</button>
       <button id="medium-taper-fade" class="haircut-option" onclick="showBarberOptions('Medium Taper Fade')">Medium Taper Fade</button>
       <button id="fade" class="haircut-option" onclick="showBarberOptions('Fade')">Fade</button>
-      <button id="tortur" class="haircut-option" onclick="showBarberOptions('Tortur')">Tortur</button>
+      <button id="geometrydash-fade" class="haircut-option" onclick="showBarberOptions('Geometry Dash Fade')">Geometry Dash Fade</button>
+      <button id="per-ivar-cut" class="haircut-option" onclick="showBarberOptions('Per Ivar Cut')">Per Ivar Cut</button>
       <button id="omskjæring" class="haircut-option" onclick="showBarberOptions('Omskjæring')">Omskjæring</button>
       <button id="flintskallet" class="haircut-option" onclick="showBarberOptions('Flintskallet')">Flintskallet</button>
       <button id="spotifypremium5" class="haircut-option" onclick="showBarberOptions('Spotifypremium5')">Spotifypremium5</button>
@@ -384,6 +385,7 @@
       <div class="barber-menu">
         <button class="barber-option" onclick="selectBarber('Anton Fylling Byfuglien')">Anton Fylling Byfuglien</button>
         <button class="barber-option" onclick="selectBarber('Aljosa Babic')">Aljosa Babic</button>
+        <button class="barber-option" onclick="selectBarber('Nisse')">Nissefjøl</button>
       </div>
     </div>
     
