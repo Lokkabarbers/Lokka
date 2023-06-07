@@ -426,6 +426,10 @@
           <label for="email">Email:</label>
           <input type="text" id="email" name="email" required>
         </div>
+          <div class="form-field">
+          <label for="ekstra-melding">Ekstra Melding:</label>
+          <input type="text" id="ekstra-melding" name="Ekstra Melding" required>
+        </div>
         <button class="checkout-button" type="submit">Checkout</button>
       </form>
     </div>
